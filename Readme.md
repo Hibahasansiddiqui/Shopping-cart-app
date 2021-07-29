@@ -19,3 +19,9 @@ Shopping cart is used by any e-commerce website to make sure that potential cust
 
 ## Codepen used:
 - https://codepen.io/WLampkin/pen/PbPymQ
+
+## Repository Link:
+- https://github.com/Hibahasansiddiqui/Shopping-cart-app
+
+## Live Link:
+- https://hibahasansiddiqui.github.io/Shopping-cart-app/
