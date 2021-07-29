@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <ul data-role="navBar">
+        <li class="siteName" data-role="navItem">Shopping Cart App - Shoppie</li>
+      </ul>
+      
+      <div class="bodyContainer">
+      <h1>Shopping Cart</h1>
+      
+      <hr />
+      <div class="row">
+        <div class="col-sm-8"><br>
+          <h4>You have <span data-role="qtyValue">0</span> items in your cart.</h4></br>
+        </div>
+        <div class="col-sm-4 contShop">
+          <p><a>Continue shopping</a></div>
+      </div>
+      
+      <div class="row">
+        <table>
+          <tr>
+            <th>Product</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th></th>
+            <th>Quantity</th>
+            <th></th>
+            <th>Subtotal</th>
+            <th></th>
+            <th></th>
+          </tr>
+          <tr data-role="lineItem">
+            <td><img src=""></td>
+            <td><select data-role="productsDdl"></select></td>
+            <td data-role="price"></td>
+            <td>x</td>
+            <td><select data-role="qtyDdl"></select></td>
+            <td>=</td>
+            <td data-role="subtotal"></td>
+            <td data-role="addBtn"><button class="button" type="button">Add</button></td>
+            <td data-role="removeBtn"><button class="button" type="button">Remove</button></td>
+          </tr>
+        </table>
+        <div><br />
+        <select name="" id="item" >
+            <option value=""> -- Choose item --</option>
+            <option value="p"> Pepsi 1 litre </option>
+            <option value="s"> Sting 500ml </option>
+            <option value="m"> Mineral water 1.5 litre </option>
+            <option value="sj"> Slice Juice bottle 1 litre </option>
+        </select>
+    ​
+        <input type="text" id="quan" placeholder="quantity">
+    ​
+        <button onclick="addItem()"> add cart</button>
+        <button onclick="removeItem()"> remove</button>
+
+        <p id="list"></p>
+      
+          <h3>Here's What You're Getting!</h3><br />
+          <ul class="cartList">
+          </ul>
+      
+          <br />
+      
+          <h4 data-role="total">Total: $<span data-role="totalCost">0</span></h4>
+          <br />
+          <br />
+      
+          <hr />
+        <div data-role="randomButtons">
+          <button class="button" data-role="cancel" type="button">Cancel</button>
+          <button class="button" data-role="checkout" type="button">Check Out</button>
+      </div>
+        </div>
+        
+    <script src="script.js"></script>
+    
+</body>
+</html>
